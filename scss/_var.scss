@@ -1,0 +1,78 @@
+@charset 'UTF-8';
+
+// ----------------------------------------------------------------------------
+// Variablen für Schriftarten und -größen
+//
+// ----------------------------------------------------------------------------
+
+$font--global: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+$font--mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font--serif: 'Times New Roman', Times, serif;
+
+// Die REM-Werte orientieren sich an der Größe 16px (1em), welche im HTML-Tag
+// festgelegt wird. 1.125rem sind dementsprechend 18px (16 * 1,125).
+
+$font-size--normal: 1rem;
+
+// H1 - H6
+
+$font-size--h-xxl: 2.2rem;
+$font-size--h-xl: 1.7rem;
+$font-size--h-large: 1.2rem;
+$font-size--h-small: 1.15rem;
+$font-size--h-xsmall: 1.1rem;
+$font-size--h-xxsmall: 1rem;
+
+// ----------------------------------------------------------------------------
+// Farben
+//
+// ----------------------------------------------------------------------------
+
+// Es sollte immer auf die Barrierefreiheit geachtet werden. Vor allem die
+// Kontraste können die Lesbarkeit einer Webseite stark verschlechtern.
+// Deswegen haben alle Standardfarben mindestens einen Wert von AA 
+// (WCAG 2.0 criterion 1.4.3)
+
+$color--black: #101010;
+$color--white: #fafafa;
+
+$colors: (
+light-red: #fc5c65, 
+danger: #eb3b5a,
+light-aqua: #45aaf2,
+info: #2d98da,
+light-blue: #4b7bec,
+primary: #3867d6,
+light-orange: #fd9644,
+warning: #fa8231,
+light-yellow: #fed330,
+dark-yellow: #f7b731,
+light-purple: #a55eea,
+dark-purple: #8854d0,
+light-green: #26de81,
+success: #20bf6b,
+light-grey: #d1d8e0,
+dark-grey: #a5b1c2,
+light-turq: #2bcbba,
+dark-turq: #0fb9b1,
+light-sky: #778ca3,
+dark-sky: #4b6584
+);
+
+// ----------------------------------------------------------------------------
+// Breakpoints
+//
+// ----------------------------------------------------------------------------
+
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+$breakpoint-large: 1200px;
+
+// ----------------------------------------------------------------------------
+// Padding & Margin
+//
+// ----------------------------------------------------------------------------
+
+$margin-amount: (0,1,2,3,4,5);
+$padding-amount: (0,1,2,3,4,5);

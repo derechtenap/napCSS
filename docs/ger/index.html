@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../dist/css/min/nap.min.css">
+    <title>napCSS &#x2013; Dokumentation</title>
+</head>
+
+<body>
+    <header class="container-article" style="border-bottom: 1px solid #101010;">
+
+        <img src="../static/napcss-logo.png" alt="napCSS Logo" style="display: block; margin: 0 auto;">
+        <h1 class="text-center">napCSS - Framework <small class="text-uppercase" style="display: block;">Geschrieben in SCSS</small></h1>
+        <h2 class="text-center text-i">Version 0.0.1</h2>
+
+        <p class="text-danger text-bold">
+            Diese Preview-Seite zeigt alle Funktionen des Frameworks. Bald wird eine noch umfangreichere Dokumentation
+            erstellt.
+        </p>
+
+    </header>
+    <main class="container-fluid">
+
+        <div class="container-article">
+            <div data-info="heading" class="pb-1" style="border-bottom: 1px solid #101010;">
+                <h2>Überschriften</h2>
+                <p class="text-b">Die Größe der Überschriften kann innerhalb der <code>_var.scss</code> festgelegt werden.</p>
+
+                <h1>Die größte Überschrift (<code>h1</code>)</h1>
+                <h2>Eine <code>h2</code>-Überschrift</h2>
+                <h3>Das ist eine <code>h3</code>-Überschrift</h3>
+                <h4><code>h4</code>-Überschriften sind deutlich kleiner</h4>
+                <h5>Dies ist eine <code>h5</code>-Überschrift</h5>
+                <h6><code>h6</code> - Die kleinste Überschrift</h6>
+
+                <p>Überschrift können mit einem <code>small</code>-Tag eine kleinere Sub-Überschrift bekommen:</p>
+                <h3>Eine <code>h3</code>-Überschrift mit <small>einer Sub-Überschrift</small></h3>
+                <code class="code-block py-2">&#x0003c;h3&#x0003e;-Überschrift mit &#x0003c;small&#x0003e;einer Sub-Überschrift&#x0003c;/small&#x0003e;&#x0003c;/h3&#x0003e;</code>
+            </div>
+
+            <div data-info="text" class="pb-1" style="border-bottom: 1px solid #101010;">
+                <h2>Text</h2>
+                <p class="text-b">Texte können mit folgenden Klassen gestylt werden:</p>
+
+                <p class="text-left">Dieser Text ist linksbündig.</p>
+                <p class="text-center">Dieser Text ist zentriert.</p>
+                <p class="text-right">Dieser Text ist rechtsbündig.</p>
+                <p class="text-justify">Dies ist ein Blocktext. Dies ist ein Blocktext. Dies ist ein Blocktext. Dies ist ein Blocktext. Dies ist ein Blocktext. Dies ist ein Blocktext.</p>
+                <p class="text-lowercase">IM QUELLCODE WURDE DIESER TEXT KOMPLETT GROSS GESCHRIEBEN.</p>
+                <p class="text-uppercase">dieser text ist im quellcode komplett klein geschrieben.</p>
+                <p class="text-capitalize">dieser text ist im quellcode komplett klein geschrieben.</p>
+                <p class="text-underline">Dieser Text ist unterstrichen.</p>
+                <p class="text-italic">Dieser Text ist kursiv.</p>
+                <p class="text-bold">Dieser Text ist Fett gedruckt.</p>
+                <p class="text-serif">Dieser Text hat Serifen.</p>
+                <p class="text-monospace">Dieser Text hat eine Monospace-Schrift.</p>
+
+                <p class="text-danger">text-danger</p>
+                <p class="text-success">text-success</p>
+                <p class="text-warning">text-warning</p>
+                <p class="text-info">text-info</p>
+            </div>
+        </div>
+
+        <div data-info="layout" class="pb-1">
+            <h2 class="container-article mb-1">Container</h2>
+            <div class="container p-1" style="background-color: #26de81;">.container</div>
+            <div class="container-blog p-1" style="background-color: #4b7bec; color: #fafafa;">.container-blog <span class="text-i">oder</span> .container-article</div>
+            <div class="container-fluid p-1" style="background-color: #eb3b5a;">.container-fluid</div>
+        </div>
+
+        <div class="container-article" style="border-top: 1px solid #101010;">
+            <div data-info="code" class="pb-1">
+                <h2>Code</h2>
+                <code>System.out.println("Hallo Welt!");</code>
+                <p>Tipp: Statt einzelnen Zeilen kann auch ein <code>.code-block</code> erstellt werden:</p>
+                <code class="code-block">body
+{
+    background-color: <span data-type="variable">$color--white</span>;
+}
+                </code>
+                <h3>kbd</h3>
+                <p> Der kbd-Tag kann genutzt werden, um Tastaturabkürzungen darzustellen: <kbd>STRG + C</kbd></p>
+                <h3>samp</h3>
+                <p>
+                    Mit dem samp-Tag sollen Konsolen-Ausgaben dargestellt werden. Mit der Zusatzklasse <code>.console</code> erscheint
+                    automatisch ein ">" vor dem Tag:
+                </p>
+                <samp>@root: --username "nap"</samp>
+                <samp class="console">User not found</samp>
+
+            </div>
+            <div data-info="spacer" class="pb-1" style="border-top: 1px solid #101010;">
+                <h2>Spacer</h2>
+                <p>
+                    Mit den Klassen <code>m-*</code>, sowie <code>ml-*</code>, <code>mr-*</code>, <code>mt-*</code>, <code>mb-*</code>,
+                    <code>mx-*</code> und <code>my-*</code> können Abstände erzeugt werden. Diese Klassen gibts auch für's Padding mit
+                    <code>p-*</code> ...
+                </p>
+                <p class="text-b">Ein paar Beispiele:</p>
+                <div class="ml-1 pb-3" style="background-color: #eb3b5a;">ml-1 pb-3</div>
+                <div class="mx-3 pt-2" style="background-color: #26de81;">mx-3 pt-2</div>
+                <div class="my-5 p-5" style="background-color: #4b7bec; color: #fafafa;">my-5 p-5</div>
+            </div>
+        </div>
+
+
+    </main>
+</body>
+
+</html>

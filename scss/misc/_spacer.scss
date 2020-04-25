@@ -1,0 +1,53 @@
+@charset 'UTF-8';
+@import '../_var.scss';
+
+// ----------------------------------------------------------------------------
+// Spacer
+//
+// ----------------------------------------------------------------------------
+
+// Dieses Modul enthält die Margin- und Padding-Klassen.
+
+@each $x in $margin-amount {
+    .m-#{$x} {
+        margin: #{$x}rem !important;
+    }
+
+    .mt-#{$x}, .my-#{$x} {
+        margin-top: #{$x}rem !important;
+    }
+
+    .mb-#{$x}, .my-#{$x} {
+        margin-bottom: #{$x}rem !important;
+    }
+
+    .ml-#{$x}, .mx-#{$x} {
+        margin-left: #{$x}rem !important;
+    }
+
+    .mr-#{$x}, .mx-#{$x} {
+        margin-right: #{$x}rem !important;
+    }
+}
+
+@each $y in $padding-amount {
+    .p-#{$y} {
+        padding: #{$y}rem !important;
+    }
+
+    .pt-#{$y}, .py-#{$y} {
+        padding-top: #{$y}rem !important;
+    }
+
+    .pb-#{$y}, .py-#{$y} {
+        padding-bottom: #{$y}rem !important;
+    }
+
+    .pl-#{$y}, .px-#{$y} {
+        padding-left: #{$y}rem !important;
+    }
+
+    .pr-#{$y}, .px-#{$y} {
+        padding-right: #{$y}rem !important;
+    }
+}

@@ -1,0 +1,121 @@
+@charset 'UTF-8';
+@import '_var.scss';
+
+// ----------------------------------------------------------------------------
+//                                       _        _        _   
+//                                     /' `\    /' `\    /' `\ 
+//                                   /'   ._) /'   ._) /'   ._)
+//     /,____     ____      ____   /'        (____    (____    
+//    /'    )  /'    )   /'    )--/'               )        )   
+//   /'    /' /'    /'  /'    /' /'               /'       /'    
+//  /'    /(__(___,/(__/(___,/'  (_____,/'(_____,/'(_____,/'      
+//                         /'                                           
+//                        /'                                             
+//                       /'                                               
+// ----------------------------------------------------------------------------
+// VERSION: 0.0.1
+
+// In der 'nap.scss' werden grundlegende Styles festgelegt.
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// ::-Pseudo Elemente werden nicht vom Internet Explorer (bis Version 8)
+// unterstützt. Für <= IE8 Support müssen alle Elemente mit einem ':'  
+// geschrieben werden.
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// line-height - Werte ohne Einheit werden mit der Schriftgröße multipliziert.
+// font-size - 1em entspricht 16px
+
+html {
+    font-style: normal;
+    font-family: $font--global;
+    font-size: 1em; // 16px
+    line-height: 1.8;
+    text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.5);
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: grayscale;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: $font-size--normal;
+    font-weight: 400;
+    background-color: $color--white;
+    color: $color--black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+
+    & small {
+        font-size: 75%;
+        // color: darken(map.get($colors, 'color--d-gray'), 25%);
+    }
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+h1 {
+    font-size: $font-size--h-xxl;
+}
+
+h2 {
+    font-size: $font-size--h-xl;
+}
+
+h3 {
+    font-size: $font-size--h-large;
+}
+
+h4 {
+    font-size: $font-size--h-small;
+}
+
+h5 {
+    font-size: $font-size--h-xsmall;
+}
+
+h6 {
+    font-size: $font-size--h-xxsmall;
+}
+
+p {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+@import '_layout.scss';
+@import 'util/_text.scss';
+@import 'misc/_spacer.scss';
+@import 'misc/_code.scss';

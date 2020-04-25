@@ -1,0 +1,54 @@
+@charset 'UTF-8';
+@import '../_var.scss';
+
+// ----------------------------------------------------------------------------
+// Code
+//
+// ----------------------------------------------------------------------------
+
+// Dieses Modul enthält Styles und Funktionen um Quellcode besser darstellen zu
+// können. ACHTUNG: Dieses Modul aktuell noch nicht fertig und wird
+// wahrscheinlich in den nächsten Versionen überarbeitet.
+
+code,
+samp,
+kbd {
+    font-family: $font--mono;
+}
+
+code {
+    // color: $color--d-red;
+    background-color: darken($color--white, 10%);
+    padding: 0.2rem;
+    border-radius: 5px;
+}
+
+.code-block {
+    // color: $color--d-red;
+    background-color: darken($color--white, 10%);
+    padding: 0.2rem;
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+    white-space: pre;
+}
+
+.code-block > [data-type="variable"] {
+    font-weight: bolder;
+}
+
+kbd {
+    background-color: $color--black;
+    padding: 0.2rem;
+    color: $color--white;
+    border-radius: 5px;
+}
+
+samp {
+    display: block;
+    margin-bottom: 0.1rem;
+}
+
+samp.console::before {
+    content: '> ';
+}
