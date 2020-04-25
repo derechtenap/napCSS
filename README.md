@@ -1,5 +1,12 @@
 # napCSS
-## *Kleines Framework - Geschrieben in SCSS*
+*Kleines Framework - Geschrieben in SCSS*
+
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/derechtenap/napCSS/master/docs/static/napcss-logo.png" alt="napCSS">
+</p>
+
+
 > Currently, this project is exclusively available in **German**.
 ### Übersicht
 **Aktuelle Version: 0.01**
