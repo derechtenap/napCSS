@@ -39,6 +39,7 @@
 .container-blog,
 .container-article {
     @extend %container-spacer;
+
     @media (max-width: $breakpoint-tablet) {
         margin-left: 1rem;
         margin-right: 1rem;

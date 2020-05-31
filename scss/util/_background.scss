@@ -1,0 +1,20 @@
+@charset 'UTF-8';
+@import '../_var.scss';
+
+// ----------------------------------------------------------------------------
+// Hintergrund
+//
+// ----------------------------------------------------------------------------
+
+// Dieses Modul enthält die Hintergrund-Klassen.
+
+// Farben
+
+.bg- {
+    @each $name,
+    $color in $colors {
+        &#{$name} {
+            background-color: $color !important;
+        }
+    }
+}

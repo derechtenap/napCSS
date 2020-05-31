@@ -1,5 +1,3 @@
-.vscode/
-.jsbeautifyrc
-# Unkomprimierte CSS-Dateien werden nicht hochgeladen. Ordner enthält auch
-# die aktuellen, unfertigen, Entwickler-Versionen
+# Ordner enthält die aktuellen, unfertigen, Entwickler-Versionen
 dist/css/ 
+.jsbeautifyrc

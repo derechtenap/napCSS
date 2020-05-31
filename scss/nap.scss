@@ -13,7 +13,7 @@
 //                        /'                                             
 //                       /'                                               
 // ----------------------------------------------------------------------------
-// VERSION: 0.0.1
+// VERSION: 0.0.2
 
 // In der 'nap.scss' werden grundlegende Styles festgelegt.
 
@@ -53,8 +53,8 @@ body {
     height: 100%;
     font-size: $font-size--normal;
     font-weight: 400;
-    background-color: $color--white;
-    color: $color--black;
+    background-color: map-get($colors, 'white');
+    color: map-get($colors, 'black');
 }
 
 h1,
@@ -69,7 +69,7 @@ h6 {
 
     & small {
         font-size: 75%;
-        // color: darken(map.get($colors, 'color--d-gray'), 25%);
+        color: map-get($colors, 'grey');
     }
 }
 
@@ -116,6 +116,9 @@ p {
 }
 
 @import '_layout.scss';
+@import '_flex.scss';
+@import 'util/_spacer.scss';
 @import 'util/_text.scss';
-@import 'misc/_spacer.scss';
+@import 'util/_background.scss';
+@import 'util/_border.scss';
 @import 'misc/_code.scss';

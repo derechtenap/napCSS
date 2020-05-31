@@ -38,17 +38,17 @@
         text-transform: capitalize !important;
     }
 
-    &underline, 
+    &underline,
     &u {
         text-decoration: underline !important;
     }
 
-    &italic, 
+    &italic,
     &i {
         font-style: italic !important;
     }
 
-    &bold, 
+    &bold,
     &b {
         font-weight: bold !important;
     }
@@ -64,8 +64,9 @@
 
     // Farben
 
-    @each $name, $color in $colors {
-        &#{$name}{
+    @each $name,
+    $color in $colors {
+        &#{$name} {
             color: $color !important;
         }
     }

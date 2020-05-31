@@ -15,6 +15,7 @@ $font--serif: 'Times New Roman', Times, serif;
 $font-size--normal: 1rem;
 
 // H1 - H6
+// Überschriften
 
 $font-size--h-xxl: 2.2rem;
 $font-size--h-xl: 1.7rem;
@@ -33,30 +34,32 @@ $font-size--h-xxsmall: 1rem;
 // Deswegen haben alle Standardfarben mindestens einen Wert von AA 
 // (WCAG 2.0 criterion 1.4.3)
 
-$color--black: #101010;
-$color--white: #fafafa;
-
 $colors: (
-light-red: #fc5c65, 
+black: #101010,
+white: #fafafa,
 danger: #eb3b5a,
-light-aqua: #45aaf2,
 info: #2d98da,
-light-blue: #4b7bec,
 primary: #3867d6,
-light-orange: #fd9644,
 warning: #fa8231,
-light-yellow: #fed330,
-dark-yellow: #f7b731,
-light-purple: #a55eea,
-dark-purple: #8854d0,
-light-green: #26de81,
+yellow: #f7b731,
+purple: #8854d0,
 success: #20bf6b,
+grey: #a5b1c2,
+mineral: #0fb9b1,
+sky: #4b6584
+);
+
+$light-colors: (
+light-danger: #fc5c65,
+light-info: #45aaf2,
+light-primary: #4b7bec,
+light-warning: #fd9644,
+light-yellow: #fed330,
+light-purple: #a55eea, 
+light-success: #26de81,
 light-grey: #d1d8e0,
-dark-grey: #a5b1c2,
-light-turq: #2bcbba,
-dark-turq: #0fb9b1,
-light-sky: #778ca3,
-dark-sky: #4b6584
+light-mineral: #2bcbba,
+light-sky: #778ca3
 );
 
 // ----------------------------------------------------------------------------
@@ -74,5 +77,17 @@ $breakpoint-large: 1200px;
 //
 // ----------------------------------------------------------------------------
 
+// Legt fest, welche Padding- und Margin-Klassen erstellt werden. 0,1,2,3,4,5
+// entspricht z.B. p-0 bis p-5
+
 $margin-amount: (0,1,2,3,4,5);
 $padding-amount: (0,1,2,3,4,5);
+
+// ----------------------------------------------------------------------------
+// Flex Grid
+//
+// ----------------------------------------------------------------------------
+
+// Legt fest, aus wie vielen Spalten das Grid besteht.
+
+$cols: 12;

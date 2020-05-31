@@ -1,0 +1,32 @@
+@charset 'UTF-8';
+@import '_var.scss';
+
+// ----------------------------------------------------------------------------
+// Layout
+//
+// ----------------------------------------------------------------------------
+
+// Dieses Modul enthält das Flex-Grid-System.
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@for $i from 1 through $cols {
+    .col-#{$i} {
+        flex: 0 0 100% / $cols * $i;
+    }
+    .col-offset-#{$i} {
+        margin-left: 100% / $cols * $i;
+    }
+}
+
+@media all and (max-width: $breakpoint-mobile) {
+    [class*="col-"] {
+        flex: 0 0 100%;
+    }
+    [class*="col-offset-"] {
+        margin-left: 0;
+    }
+}

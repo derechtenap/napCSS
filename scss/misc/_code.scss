@@ -17,30 +17,29 @@ kbd {
 }
 
 code {
-    // color: $color--d-red;
-    background-color: darken($color--white, 10%);
+    background-color: map-get($light-colors, 'light-grey');
     padding: 0.2rem;
     border-radius: 5px;
 }
 
 .code-block {
-    // color: $color--d-red;
-    background-color: darken($color--white, 10%);
+    background-color: map-get($light-colors, 'light-grey');
     padding: 0.2rem;
     border-radius: 5px;
     width: 100%;
     display: block;
     white-space: pre;
+    hyphens: none;
 }
 
-.code-block > [data-type="variable"] {
+.code-block>[data-type="variable"] {
     font-weight: bolder;
 }
 
 kbd {
-    background-color: $color--black;
+    background-color: map-get($colors, 'black');
     padding: 0.2rem;
-    color: $color--white;
+    color: map-get($colors, 'white');
     border-radius: 5px;
 }
 

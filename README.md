@@ -17,9 +17,10 @@ Dieses Framework wird in SCSS geschrieben. Alle variablen Werte befinden sich in
 ### Struktur
 ```
 |
-│   README.md
-│   .gitigonore  
-│   .gitattributes
+└─── docs
+|
+└─── dist
+|   └─── release
 |
 └─── scss
 │   │   nap.scss
@@ -27,27 +28,23 @@ Dieses Framework wird in SCSS geschrieben. Alle variablen Werte befinden sich in
 │   │   _layout.scss
 |   |
 │   └─── misc
-│   |   │   _spacer.scss
 │   |   │   _code.scss
 |   |
+│   └─── mixins
+|   |
 |   └─── util
-│       │   _text.scss   
+|       |   _spacer.scss
+│       │   _text.scss     
 |
-└─── docs
-|
-└─── dist
-|   └─── release
+│   README.md
+│   .gitigonore  
+│   .gitattributes
 |
 ```
 ### Funktionen
 Alle aktuellen Funktionen können in der Dokumentation (`docs/ger/index.html`) eingesehen werden.
 ### Zukünftige Funktionen
 Dieser Funktionen sind für die nächsten Versionen geplant:
-
-**0.0.2**
-- Flex Grid-System
-- Border Utils
-- Background Utils
 
 **0.0.3**
 - Darkmode
