@@ -3,7 +3,7 @@
 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/derechtenap/napCSS/master/docs/static/napcss-logo.png" alt="napCSS">
+  <img src="https://raw.githubusercontent.com/derechtenap/napCSS/master/docs/static/napcss-logo-v2.png" alt="napCSS">
 </p>
 
 
