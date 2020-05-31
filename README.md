@@ -9,7 +9,7 @@
 
 > Currently, this project is exclusively available in **German**.
 ### Übersicht
-**Aktuelle Version: 0.01**
+**Aktuelle Version: 0.02**
 
 Dieses Framework wird in SCSS geschrieben. Alle variablen Werte befinden sich in der `_var.scss`. Dies ermöglicht es, das Framework persönlich anzupassen. Durch die Anpassung müssen allerdings die SCSS-Dateien in CSS umgewandelt werden. Dies geht am einfachsten über den Live SASS Compiler. Das fertige Framework befindet sich im `release`-Ordner.
 
