@@ -4,8 +4,8 @@
   "description": "Open source front-end framework for responsive and mobile-friendly websites. Includes a grid system, prebuilt components and utility classes.",
   "main": "",
   "scripts": {
-    "build": "sass scss/nap.scss build/nap.css",
-    "watch": "sass --watch scss/nap.scss build/nap.css"
+    "build": "sass src/nap.scss build/nap.css",
+    "watch": "sass --watch src/nap.scss build/nap.css"
   },
   "repository": {
     "type": "git",
