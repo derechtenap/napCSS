@@ -13,3 +13,10 @@ body {
   margin: 0;
   padding: 0;
 }
+
+// Remove the `margin-top` from any heading size for easier styling
+@for $size from 1 to 7 {
+  h#{$size} {
+    margin-top: 0;
+  }
+}
