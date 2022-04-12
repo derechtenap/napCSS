@@ -1,7 +1,15 @@
 @charset 'UTF-8';
+@use "_variables";
 
 *::before,
 *::after,
 * {
   box-sizing: border-box;
+}
+
+body {
+  font-family: variables.$font--default;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
 }
