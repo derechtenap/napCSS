@@ -1,0 +1,23 @@
+{
+  "name": "napcss",
+  "version": "0.0.1",
+  "description": "Open source front-end framework for responsive and mobile-friendly websites. Includes a grid system, prebuilt components and utility classes.",
+  "main": "",
+  "scripts": {
+    "build": "sass scss/nap.scss build/nap.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derechtenap/napCSS.git"
+  },
+  "keywords": [
+    "sass",
+    "scss"
+  ],
+  "author": "derechtenap",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/derechtenap/napCSS/issues"
+  },
+  "homepage": "https://github.com/derechtenap/napCSS#readme"
+}
