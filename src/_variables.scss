@@ -8,3 +8,19 @@ $font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
 
 $font-size-default: 10px;
 
+// Color theme
+// Source: --> https://flatuicolors.com/palette/de
+
+$colors-default: (
+  "red": #eb3b5a,
+  "orange": #fa8231,
+  "yellow": #fed330,
+  "green": #20bf6b,
+  "teal": #0fb9b1,
+  "sky": #2d98da,
+  "blue": #3867d6,
+  "purple": #8854d0,
+  "light": #a5b1c2,
+  "white": #fafafa,
+  "black": #1d1d1d,
+);
