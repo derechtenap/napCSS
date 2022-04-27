@@ -1,22 +1,5 @@
 @charset 'UTF-8';
-@use "_variables";
-
-*::before,
-*::after,
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: variables.$font--default;
-  font-size: 10px;
-  margin: 0;
-  padding: 0;
-}
-
-// Remove the `margin-top` from any heading size for easier styling
-@for $size from 1 to 7 {
-  h#{$size} {
-    margin-top: 0;
-  }
-}
+@use "reset";
+@use "utils/typography";
+@use "layout/flex";
+@use "layout/grid";
