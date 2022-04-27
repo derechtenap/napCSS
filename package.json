@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/derechtenap/napCSS/issues"
   },
-  "homepage": "https://github.com/derechtenap/napCSS#readme"
+  "homepage": "https://github.com/derechtenap/napCSS#readme",
+  "devDependencies": {
+    "sass": "^1.51.0"
+  }
 }
